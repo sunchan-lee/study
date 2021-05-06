@@ -1,0 +1,28 @@
+==
+실천할것
+하루에 공부한것 정리한것 깃에 올리기 - (과제 피드백, 당일 수업 주석최대한 붙혀서)
+
+==어린이날 과제 피드백
+
+//되도록이면 ANSI코드를 사용해서 가독성을 높이자
+
+//2번 where 절이 하나
+and를 넣었어야 한다.
+
+옳은 답.
+select employee_id, first_name, department_name, job_title
+from employees e, departments d, jobs j
+where e.department_id=d.department_id;
+//and e.job_id = j.job_id;
+
+
+====================
+servletTest02
+Edit, Delete, Update (read_count)
+Listener
+=======
+능력단위 변경
+HTML 태그에 익숙해질것.
+HTML
+블록 요소 - div 태그
+인라인 요소
