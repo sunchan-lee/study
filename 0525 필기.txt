@@ -1,0 +1,73 @@
+LIST
+-add(); 		    // 순차적 삽입이 가능하다.
+-add(인덱스, 데이터); //  중간에 삽입이 가능하다.
+-remove()
+-set(인덱스, 데이터) // 수정
+-get(인덱스) //불필요한 요소 - 확장형 for문 사용 추천.
+
+SET - (로또를 연상하면 쉽다)
+-저장순서를 유지하지 않는다.
+-중복저장하지 않는다. - (ex. 로또 프로그램 더 쉽게 만들기)
+	1. hashCode() : 같은 데이터가 있는지 확인 다르면 -> 저장
+	2. equals() : 같은 데이터확인 false -> 저장 | true-> 동일객체입니다. 저장 안함.
+-주요 클래스로 HashSet, LinkedSet, TreeSet(검색에 용이)
+-저장순서가 없기때문에 수정이라는 개념이 없다.
+
+-add() 삽입
+-remove() 제거
+-for(E:콜렉션){} : 알아서 가지고 온다.
+-iterator 통해서 데이터 추출이 가능하다
+	-hasNext() : 데이터의 존재유무 확인
+	-next(): 데이터 추출
+
+key, value 구성된 entry 객체를 저장하는 구조
+
+
+MAP
+-key는 중복 불가
+-value는 중복이 되도 상관이 없다.
+-put(key, value)
+-get(key)
+
+동일한 key 값으로 데이터 삽입하면 수정처리 된다.
+순서를 굳이 지키지 않아도 되나, 순서를 지키는게 관리하는것에 편하다.
+
+대표 클래스
+hashMap, hashtable, LinkedHash, TreeMap, Properties
+
+구조 부분, 신택스 잘 파악하면 된다.
+
+==========
+
+Stack
+-LIFO - Last in First Out - 나중에 들어간것이 먼저 나온다.
+
+Queue
+-FIFO First in First Out - 먼저 들어간것이 먼저 나온다.
+
+==========
+
+1. 자바의 컬렉션 프레임 워크에 대한 설명으로 틀린것은 무엇인가요?
+a. List 컬렉션은 index로 객체 관리하면 중복 저장을 허용한다.
+b. Set 컬렉션은 순서를 유지하지 않으며 중복 저장을 허용하지 않는다.
+c. map 컬렉션은 키와 값으로 구성된 Map.Entry 를 저장한다.
+d. Stack은 FIFO(선입선출) 자료 구조를 구현한 클래스이다.
+정답
+D - Stack은 LIFO 자료구조이다.
+
+2. LIST 컬렉션에 대한 설명중 틀린것은?
+a. 대표적은 구현 클래스로 ArrayList, Vector, LinkedList가 있다.
+b. 멀티 스레드 환경에서 ArrayList 보다 Vector 가 스레드에 안전하다
+c. ArrayList 에서 객체를 삭제하면 삭제된 위치는 비어있게 된다
+d. 중간 위체에 객체를 빈번히 삽입하거나 삭제할 경우 LinkedList 사용하는것이 좋다.
+정답 - cㄴ
+
+
+3. Set 컬렉션에 대한 설명중 틀린것은?
+d
+
+========
+
+메인 스레드
+
+싱크로나이즈 처리
