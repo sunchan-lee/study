@@ -1,0 +1,22 @@
+java.io
+
+스트림 기반(Stream)
+ -InputStream 입력 스트림 (추상 클래스)
+ -OutputStream 출력 스트림(추상 클래스)
+
+stdin  - System.in 표준입력 스트림 - 키보드에 연결
+stdout - System.out 표준출력 스트림 - 모니터에 연결
+stderr - System.err 표준에러스트림 - 모니터에 연결
+
+바이트 기반 스트림(byte) - 모든 종류의 데이터 처리, 바이트로 문자 기반 처리 가능하다.
+	-입력 스트림: InputStream
+	-출력 스트림: OutputStream
+
+문자 기반 스트림(Character) - 문자만 처리하는 스트림
+	-입력 스트림: Reader
+	-출력 스트림: Writer
+	
+File
+ -바이너리 파일
+ -텍스트 파일
+
