@@ -1,0 +1,26 @@
+예외 (Exception)
+
+우리는 잘 만들었다고 생각했는데, 사용자가 약속된것 이외 행동으로 잘못된 결과를 만들어낸다.
+사용자 조작시 잘못된 조작, 개발자의 잘못된 코딩으로 인해 발생하는 프로그램 오류
+에러 또는 예외 발생시 프로그램이 종료한다.
+
+좋은예시
+네이버 같은 포털사이트에서 
+https://www.naver.com/aaaaa 같은 없는 페이지로 이동
+
+예외처리 (Exception Handling)
+예외 발생시 프로그램이 정리되지 않고 정상적 실행을 유지 시키는것.
+
+예외의 두가지 종류
+-일반예외 (Exception)
+https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Exception.html
+컴파일러가 체크하는 예외
+
+
+
+
+-Runtime Exception
+https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/RuntimeException.html
+실행시 발생하는 예외
+컴파일 시에는 체크되지 않는다.
+
